@@ -2,21 +2,21 @@
 class OtDockerLinter < Formula
   desc "A linter designed in golang for checking Dockerfile best practices."
   homepage "https://github.com/opstree/OT-DockerLinter"
-  version "0.1"
+  version "0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/opstree/OT-DockerLinter/releases/download/v0.1/ot-docker-linter_0.1_macOS-64bit.tar.gz"
-    sha256 "5451a1b4ef1c88f1b7f301fb92f26488ac89614cefa63f883c8255f81b5cdcd1"
+    url "https://github.com/opstree/OT-DockerLinter/releases/download/v0.2/ot-docker-linter_0.2_macos-64bit.tar.gz"
+    sha256 "743d38c004f069aff96f0f03598f54556ed9ec500385a49003ebb06c57c65cf1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/opstree/OT-DockerLinter/releases/download/v0.1/ot-docker-linter_0.1_Linux-64bit.tar.gz"
-      sha256 "ac6b79a7070ed2293aec6011be480f0336b1fb2282836fe0d48a607802c8ec95"
+      url "https://github.com/opstree/OT-DockerLinter/releases/download/v0.2/ot-docker-linter_0.2_linux-64bit.tar.gz"
+      sha256 "5cedf5e0d6db46c6a2f006bfacfed6bd3f01e6ea303a4a8a2f5538188bd14137"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/opstree/OT-DockerLinter/releases/download/v0.1/ot-docker-linter_0.1_Linux-ARM64.tar.gz"
-        sha256 "d46208e5fc11ef347676a5deca41b119872bedffbec3d36dbe4c730c6403c40e"
+        url "https://github.com/opstree/OT-DockerLinter/releases/download/v0.2/ot-docker-linter_0.2_linux-arm64.tar.gz"
+        sha256 "13146cd2b1327359dce2d7623b2d7094dde8a82af2e91287d917d08056b4a6d2"
       else
       end
     end
